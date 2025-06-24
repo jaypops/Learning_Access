@@ -51,37 +51,37 @@ export function SettingsDialog() {
     {
       title: "USER SETTINGS",
       items: [
-        { id: "my-account", label: "My Account", icon: User, active: true },
-        { id: "profiles", label: "Profiles", icon: User },
-        { id: "privacy-safety", label: "Privacy & Safety", icon: Shield },
-        { id: "authorized-apps", label: "Authorized Apps", icon: Link },
-        { id: "connections", label: "Connections", icon: Link },
-        { id: "friend-requests", label: "Friend Requests", icon: Users },
+        { id: "my-account", label: "My Account", icon: User, active: true, badge: false },
+        { id: "profiles", label: "Profiles", icon: User, badge: false },
+        { id: "privacy-safety", label: "Privacy & Safety", icon: Shield, badge: false },
+        { id: "authorized-apps", label: "Authorized Apps", icon: Link, badge: false },
+        { id: "connections", label: "Connections", icon: Link, badge: false },
+        { id: "friend-requests", label: "Friend Requests", icon: Users, badge: false },
       ],
     },
     {
       title: "BILLING SETTINGS",
       items: [
         { id: "nitro", label: "Nitro", icon: Crown, badge: true },
-        { id: "server-boost", label: "Server Boost", icon: Zap },
-        { id: "subscriptions", label: "Subscriptions", icon: CreditCard },
+        { id: "server-boost", label: "Server Boost", icon: Zap, badge: false },
+        { id: "subscriptions", label: "Subscriptions", icon: CreditCard, badge: false },
         { id: "gift-inventory", label: "Gift Inventory", icon: Gift, badge: true },
       ],
     },
     {
       title: "APP SETTINGS",
       items: [
-        { id: "appearance", label: "Appearance", icon: Palette },
-        { id: "accessibility", label: "Accessibility", icon: Eye },
-        { id: "voice-video", label: "Voice & Video", icon: Mic },
-        { id: "text-images", label: "Text & Images", icon: Clipboard },
-        { id: "notifications", label: "Notifications", icon: Bell },
-        { id: "keybinds", label: "Keybinds", icon: Gamepad2 },
-        { id: "language", label: "Language", icon: Globe },
-        { id: "advanced", label: "Advanced", icon: Database },
+        { id: "appearance", label: "Appearance", icon: Palette, badge: false },
+        { id: "accessibility", label: "Accessibility", icon: Eye, badge: false },
+        { id: "voice-video", label: "Voice & Video", icon: Mic, badge: false },
+        { id: "text-images", label: "Text & Images", icon: Clipboard, badge: false },
+        { id: "notifications", label: "Notifications", icon: Bell, badge: false },
+        { id: "keybinds", label: "Keybinds", icon: Gamepad2, badge: false },
+        { id: "language", label: "Language", icon: Globe, badge: false },
+        { id: "advanced", label: "Advanced", icon: Database, badge: false },
       ],
     },
-  ]
+  ];
 
   const getCurrentTabLabel = () => {
     for (const category of settingsCategories) {
